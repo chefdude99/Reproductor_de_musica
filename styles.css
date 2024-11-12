@@ -1,7 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+
 .left_part{
     padding-top: 10px;
     background-color: rgba(178, 190, 191, 1);
-    width: 30%;
+    width: 20%;
 }
 
 .Logo_Nombre{
@@ -38,6 +42,14 @@ align-items: center;
     flex-direction: column;
 }
 
-span{
-    margin-top: 20px;
+.Menu_items{
+    margin: 20px 20px;
+}
+
+.img_de_la_repro{
+    display: flex;
+}
+
+.foto_del_album{
+    width: 400px;
 }
