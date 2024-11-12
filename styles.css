@@ -65,7 +65,10 @@ footer{
     justify-content: space-between;
 }
 
-
+.play_next_repeat_again{
+    display: flex;
+    justify-content: space-between;
+}
 
 .volum_confi{
     background-color: rgba(178, 190, 191, 1);
