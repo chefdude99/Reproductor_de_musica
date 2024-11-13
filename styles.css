@@ -1,7 +1,36 @@
 *{
     box-sizing: border-box;
     font-family: Courier;
+    margin: 0;
+    padding: 0;
 }
+
+#container{
+}
+.song{
+    margin: 10px;
+    transform:
+      perspective(800px)
+      rotateY(-8deg);
+    transition: transform 1s ease 0s;
+    border-radius: 10px;
+    box-shadow:
+      rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
+      rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+      rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
+      rgba(0, 0, 0, 0.1) 0px 20px 30px 0px;
+  
+    &:hover {
+      transform: perspective(800px) rotateY(20deg);
+    }
+  }
+
+.aside_albumes{
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+
 
 .left_part{
     padding-top: 10px;
@@ -48,7 +77,8 @@ gap: 10px;
     text-align: center;
     margin: 20px 20px;
     font-size: 30px;
-    gap: 30px;
+    gap: 50px;
+    padding: 20px;
 }
 
 .img_de_la_repro{
@@ -63,13 +93,66 @@ footer{
     background-color: rgba(189, 42, 46, 1);
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+
+.tiempo_song{
+    margin-left: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linea_volum{
+    width: 580px;
 }
 
 .play_next_repeat_again{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    padding: 10px;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+}
+
+.icon_next{
+    width: 100px;
+    height: 100px;
+}
+
+.img_album_sig{
+    display: flex;
+    justify-content: center;
+}
+
+.album_sig{
+    border-radius: 10px;
 }
 
 .volum_confi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(178, 190, 191, 1);
+    height: 150px;
+    
+}
+
+.volumen{
+    margin: 30px;
+    width: 80px;
+    height: 60px;
+}
+
+.confi{
+    margin: 30px;
+    width: 80px;
+    height: 75px;
 }
